@@ -55,7 +55,7 @@ func (t *Terminal) FeedChild(text string) {
 }
 
 func makeStrings(array []string) **C.char {
-	cArray := C.make_strings(C.int(len(array)))
+	cArray := C.make_strings(C.int(len(array) + 1))
 	for i, e := range array {
 		cstr := C.CString(e)
 		C.set_string(cArray, C.int(i), (*C.char)(cstr))
