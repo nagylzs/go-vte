@@ -3,6 +3,10 @@ This is a binding for libvte
 
 The binding acts as an extension to github.com/gotk3/gotk3/gtk
 
+This is a fork based on napsy/go-vte, it aims to be the most complete binding for libtve.
+
+Work in progress!
+
 ## Example
 
 
