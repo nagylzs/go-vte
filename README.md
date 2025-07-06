@@ -7,6 +7,18 @@ This is a fork based on napsy/go-vte, it aims to be the most complete binding fo
 
 Work in progress!
 
+## Environment variables
+
+There is currently no official TERM value that denotes truecolor support, because terminfo/termcap does not
+have a standard entry for 24-bit color. You should set the following environment variables to take advantage
+of all VTE features:
+
+```bash
+export TERM=xterm-256color
+export COLORTERM=truecolor
+```
+
+
 ## Example
 
 
